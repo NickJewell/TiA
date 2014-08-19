@@ -1,0 +1,17 @@
+{% extends "newindex.html" %}
+{% block content %}
+
+{% for record in records %}
+<div class="container">
+<p>
+	<span class="label label-primary">{{record[2]}}</span>
+	<span class="label label-danger">{{record[5]}}</span>
+  <p class="lead">{{record[7]}}</p>
+  <br/>
+  <p class="text-info"><a href={{record[1]}} target="_blank">{{record[1]}}</a></p>
+  <br/>
+  <br/>
+</p>
+</div>
+{% endfor %}
+{% endblock %}
